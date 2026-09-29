@@ -1,0 +1,22 @@
+{
+  "name": "store-rating-app",
+  "version": "1.0.0",
+  "description": "A simple store rating application built with React and Node.js",
+  "main": "backend/app.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npx react-scripts build",
+    "start": "cd backend && npm start",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "seed": "cd backend && npm run seed"
+  },
+  "keywords": ["store", "rating", "react", "node", "express"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
